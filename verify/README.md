@@ -33,6 +33,8 @@ python3 pcap_parse.py verify_list.csv verify_capture.pcap verify_capture_parsed 
 python3 amp_calculate.py verify_capture_parsed amp_log 
 # Run the amp_calculation script to calculate the estimated amplification factor under different RTT or when the victim is unresponsive.
 
+python3 get_success_rate.py amp_log verify_list.csv
+# Check the success rate per pattern type
 
 python3 draw.py amp_log tagging_result.csv
 # Run the draw.py to draw the violin plot to show the average/median amplification factor per pattern type for unresponsive victims and responsive victims with 150ms RTT.
