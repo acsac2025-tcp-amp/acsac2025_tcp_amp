@@ -13,13 +13,13 @@ def check_repeats(l):
     for isn in freq_dict.keys():
         if freq_dict[isn]>1:
             odd_pos = False
-            prial_pos = False
+            even_pos = False
             for i in range(0,len(l)):
                 if l[i]==isn and i%2==0:
-                    prial_pos=True
+                    even_pos=True
                 elif l[i]==isn and i%2==1:
                     odd_pos = True
-            if odd_pos==True and prial_pos==True:
+            if odd_pos==True and even_pos==True:
                 global_proof = True
                 break
     return global_proof
