@@ -1,5 +1,4 @@
 After obtaining the "ISN_set_filterd.csv" from the ISN scanner (/scan folder), use the following script to run clustering over the collected ISNs. When the ISN dataset is too large, consider using a fraction of it, e.g., 10 million hosts' ISN sequences.
-In cluster/example_pattern, we also provide a few example raw ISN sequences, ISN difference sequences, and difference of difference sequences of each pattern.
 
 1. Run clustering on the ISN dataset
 ```

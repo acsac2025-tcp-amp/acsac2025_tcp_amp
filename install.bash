@@ -2,7 +2,6 @@
 
 sudo apt-get install build-essential -y
 sudo apt-get install -y "python$(python3 -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')-venv"
-# sudo apt-get install -y iptables 
 # install corresponding python venv dep
 
 

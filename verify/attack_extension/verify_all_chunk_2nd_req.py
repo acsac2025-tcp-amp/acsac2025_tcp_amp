@@ -153,8 +153,8 @@ def verifier(probe_sender1,probe_sender2,verify_sender,probe_port1,probe_port2,d
                 bypass_pac = build_ack_packet(verify_sender,dst_ip,bypass_ack,dport,seq+1+len(payload_template)*2)
                 raw_socket.send(bypass_pac)
             time.sleep(0.2)
-            # try to acknowledge payloads triggered by the sedcond HTTP request, avoiding acknowledge the last chunk to allow retransmission.
-
+            # when sending a second request, try to acknowledge payloads triggered by the sedcond HTTP request, avoiding acknowledge the last chunk to allow retransmission.
+            # This shall not be used in other cases
 
         end_time = time.time()
         bytes_cost = len(probe_syn1)*2+len(verify_syn)
